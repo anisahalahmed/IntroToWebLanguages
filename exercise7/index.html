@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<input id="name-input" type="text" placeholder="Enter your name" />
+		<button id="my-button">Click Me</button>
+
+		<script>
+			// find the button with the id 'my-button' and store it in the myButton variable
+  			var myButton = document.querySelector('#my-button');
+			// find the input tag element with the id 'name-input' and store in in the nameInput variable 
+			var nameInput = document.querySelector('#name-input');
+			
+			// add a function to be called whenever the myButton button is clicked
+			// Based on information found here:
+			// https://www.w3schools.com/jsref/met_document_addeventlistener.asp
+			myButton.addEventListener('click', function () {
+				// look at the text typed into the nameInput box, see if anything is typed
+				if (nameInput.value !== '') {
+					// if something is typed into the box, display a message to the browser greeting the person based on the name they gave
+					alert('Hello ' + nameInput.value);
+				}
+				// if nothing was typed, do nothing
+			});
+		</script>
+	</body>
+</html>
