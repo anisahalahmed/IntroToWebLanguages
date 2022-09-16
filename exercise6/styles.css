@@ -1,0 +1,16 @@
+#main-title {
+
+	/* https://blog.hubspot.com/website/center-text-in-css */
+	text-align: center;
+
+}
+
+body {
+
+	background-color: pink;
+	/* https://www.freecodecamp.org/news/how-to-change-font-with-html/
+	There is a section on font-family here that explains how to change the font.
+	This rule will affect all text elements in index.html since it's being applied to the body tag */
+	font-family: Consolas;
+
+}
